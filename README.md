@@ -2,7 +2,7 @@ Creates a fingerprint for the given entity name. It supports special character, 
 
   ## Examples
 
-    ```
+  ```
     iex(1)> EntityFingerprint.create("ФИЛИАЛ КОМПАНИИ С ОГРАНИЧЕННОЙ")
 
     {:ok,
@@ -67,17 +67,17 @@ Creates a fingerprint for the given entity name. It supports special character, 
     iex(8)> EntityFingerprint.create("New York, New York")
     {:ok,
     [fingerprint: "new york", original: "New York, New York", script: "latin"]}
-    ```
+  ```
   ## Thanks
 
-    This library was heavily inspired by the python tool \[alephdata\/fingerprints\](https://github.com/alephdata/fingerprints)
+  This library was heavily inspired by the python tool [alephdata/fingerprints](https://github.com/alephdata/fingerprints)
 
-    - A \[Google Spreadsheet\](https://docs.google.com/spreadsheets/d/1Cw2xQ3hcZOAgnnzejlY5Sv3OeMxKePTqcRhXQU8rCAw/edit?ts=5e7754cf#gid=0) created by OCCRP.
+  - A [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1Cw2xQ3hcZOAgnnzejlY5Sv3OeMxKePTqcRhXQU8rCAw/edit?ts=5e7754cf#gid=0) created by OCCRP.
 
-    - The ISO 20275: \[Entity Legal Forms Code List\](https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list)
+  - The ISO 20275: [Entity Legal Forms Code List](https://www.gleif.org/en/about-lei/code-lists/iso-20275-entity-legal-forms-code-list)
 
-    - Wikipedia also maintains an index of \[types of business entity\](https://en.wikipedia.org/wiki/Types_of_business_entity).
+  - Wikipedia also maintains an index of [types of business entity](https://en.wikipedia.org/wiki/Types_of_business_entity).
 
   ## See also
 
-    - \[Clustering in Depth\](https://github.com/OpenRefine/OpenRefine/wiki/Clustering-In-Depth), part of the OpenRefine documentation discussing how to create collisions in data clustering.
+  - [Clustering in Depth](https://github.com/OpenRefine/OpenRefine/wiki/Clustering-In-Depth), part of the OpenRefine documentation discussing how to create collisions in data clustering.
