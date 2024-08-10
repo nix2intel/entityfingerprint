@@ -100,6 +100,7 @@ defmodule EntityFingerprint.Fingerprint do
   defp abbreviate_entity(entity) do
     entity
     |> String.trim()
+    |> String.upcase()
     |> replace_abbreviations()
   end
 
