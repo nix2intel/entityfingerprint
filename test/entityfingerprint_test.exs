@@ -16,6 +16,15 @@ defmodule EntityFingerprint.FingerprintTest do
     assert Fingerprint.create(entity) ==
              {:ok, [fingerprint: "new york", original: "New York, New York", script: "latin"]}
   end
+  
+  test "create fingerprint for empty abbreviation" do
+    entity = "CHAMBRE DE COMMERCE"
+
+    assert Fingerprint.create(entity) ==
+             {:error, "Entity perfectly matches abbreviation: CHAMBRE DE COMMERCE" } 
+  end
+
+
 
   test "create fingerprint for Google" do
     entity = "Google Limited Liability Company    !!!"

@@ -88,14 +88,22 @@ defmodule EntityFingerprint.Fingerprint do
 
     - \[Clustering in Depth\](https://github.com/OpenRefine/OpenRefine/wiki/Clustering-In-Depth), part of the OpenRefine documentation discussing how to create collisions in data clustering.
   """
-  def create(entity) do
-    abbreviated_entity = abbreviate_entity(entity)
-    fingerprint = create_fingerprint(abbreviated_entity)
-    #We use the abbreviated entity to gat the script, because of potential whitespace at beginning of word
-    [script_atom | _] = Unicode.script(abbreviated_entity)
-    script = Atom.to_string(script_atom)
-    {:ok, fingerprint: fingerprint, original: entity, script: script}
+def create(entity) do
+  abbreviated_entity = abbreviate_entity(entity)
+  fingerprint = create_fingerprint(abbreviated_entity)
+
+  if String.trim(abbreviated_entity) == "" do
+    {:error, "Entity perfectly matches abbreviation: " <> entity}
+  else
+    case Unicode.script(abbreviated_entity) do
+      [script_atom | _] ->
+        script = Atom.to_string(script_atom)
+        {:ok, fingerprint: fingerprint, original: entity, script: script}
+      _ ->
+        {:error, "Failed to get script for entity: " <> entity}
+    end
   end
+end
 
   defp abbreviate_entity(entity) do
     entity
