@@ -472,19 +472,9 @@
         "abbreviations": ""
     },
     {
-        "legal_form_local_name": "COMPANY",
-        "legal_form_transliterated_name": "COMPANY",
-        "abbreviations": "ltd."
-    },
-    {
-        "legal_form_local_name": "ASSOCIATION",
-        "legal_form_transliterated_name": "ASSOCIATION",
-        "abbreviations": ""
-    },
-    {
         "legal_form_local_name": "PUBLIC COMPANY",
         "legal_form_transliterated_name": "PUBLIC COMPANY",
-        "abbreviations": "ltd."
+        "abbreviations": "ltd"
     },
     {
         "legal_form_local_name": "ЗАКРЫТАЕ АКЦЫЯНЕРНАЕ ТАВАРЫСТВА",
@@ -12687,11 +12677,6 @@
         "abbreviations": "Co-op"
     },
     {
-        "legal_form_local_name": "LIMITED LIABILITY COMPANY (INCLUDING PROFESSIONAL LLC AND SERIES LLC)",
-        "legal_form_transliterated_name": "LIMITED LIABILITY COMPANY (INCLUDING PROFESSIONAL LLC AND SERIES LLC)",
-        "abbreviations": "L.L.C."
-    },
-    {
         "legal_form_local_name": "NONPROFIT CORPORATION",
         "legal_form_transliterated_name": "NONPROFIT CORPORATION",
         "abbreviations": ""
@@ -12754,7 +12739,7 @@
     {
         "legal_form_local_name": "MASTER LIMITED LIABILITY COMPANY",
         "legal_form_transliterated_name": "MASTER LIMITED LIABILITY COMPANY",
-        "abbreviations": "Limited Liabilty Company"
+        "abbreviations": "LLC"
     },
     {
         "legal_form_local_name": "AGRICULTURAL COOPERATIVE",
@@ -12774,12 +12759,12 @@
     {
         "legal_form_local_name": "SERIES",
         "legal_form_transliterated_name": "SERIES",
-        "abbreviations": "Limited Liabilty Company"
+        "abbreviations": "LLC"
     },
     {
         "legal_form_local_name": "PROFESSIONAL ASSOCIATION",
         "legal_form_transliterated_name": "PROFESSIONAL ASSOCIATION",
-        "abbreviations": "P.A."
+        "abbreviations": "PA"
     },
     {
         "legal_form_local_name": "NOT-FOR-PROFIT CORPORATION",
@@ -12789,7 +12774,7 @@
     {
         "legal_form_local_name": "STATUTORY PUBLIC BENEFIT LIMITED LIABILITY COMPANY",
         "legal_form_transliterated_name": "STATUTORY PUBLIC BENEFIT LIMITED LIABILITY COMPANY",
-        "abbreviations": "S.P.B.L.L.C."
+        "abbreviations": "SPBLLC"
     },
     {
         "legal_form_local_name": "LIMITED LIABILITY LIMITED PARTERSHIP",
@@ -13419,12 +13404,12 @@
     {
         "legal_form_local_name": "LIMITED LIABILITY COMPANY (LLC)",
         "legal_form_transliterated_name": "LIMITED LIABILITY COMPANY (LLC)",
-        "abbreviations": "L.L.C."
+        "abbreviations": "LLC"
     },
     {
         "legal_form_local_name": "BENEFIT LLC",
         "legal_form_transliterated_name": "BENEFIT LLC",
-        "abbreviations": "L.L.C."
+        "abbreviations": "LLC"
     },
     {
         "legal_form_local_name": "UNIFORM LIMITED COOPERATIVE ASSOCIATION",
